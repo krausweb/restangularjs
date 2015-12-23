@@ -1,0 +1,64 @@
+{
+  "name": "RESTangular",
+  "authors": [
+    "Alexander Kryvonos <krausweb291985@gmail.com>"
+  ],
+  "description": "REST API for test work",
+  "main": "index.html",
+  "moduleType": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krausweb/restangularjs.git"
+  },
+  "keywords": [
+    "REST",
+    "API",
+    "angularJS"
+  ],
+  "license": "MIT",
+  "homepage": "http://restangular.com.local",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "angular": "1.4.8",
+    "bootstrap": "~3.3.6",
+    "ngSweetAlert": "angular-sweetalert#~1.1.0",
+    "tooltipster": "~3.3.0",
+    "angular-sanitize": "~1.4.8"
+  },
+  "overrides": {
+    "jquery": {
+      "main": [
+        "dist/jquery.min.js"
+      ]
+    },
+    "angular": {
+      "main": [
+        "angular.min.js"
+      ]
+    },
+    "angular-sanitize": {
+      "main": [
+        "angular-sanitize.min.js"
+      ]
+    },
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.min.css",
+        "dist/css/bootstrap-theme.min.css",
+        "dist/js/bootstrap.min.js"
+      ]
+    },
+    "ngSweetAlert": {
+      "main": [
+        "SweetAlert.min.js"
+      ]
+    }
+  }
+}

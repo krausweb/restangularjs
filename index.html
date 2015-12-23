@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!--only used css, @todo bug with sweetalert-->
+    <!--<link href="assets/css_used/main/bundle.min.css?rev=45fd7f6d3af0a5626479a9befc2a09e7" rel="stylesheet" >-->
+    <!--all css -->
+    <link href="assets/css_bundle/bundle.min.css?rev=5dd7cd3d5ea9913f111ca47eda78673b" rel="stylesheet" >
+    <script src="assets/js_bundle/bundle.min.js?rev=0e01e9362a60791dc5ece086e4679d9a"></script>
+
+    <link href="frontend/css/frontend.min.css?rev=7f3b74ce43ce381b63cf4d1ec24c69e9" rel="stylesheet" >
+    <script src="frontend/js/frontend.min.js?rev=d41d8cd98f00b204e9800998ecf8427e"></script>
+    <script src="frontend/js/angularjs/rest.js?rev=4709ce07e9f5bbb08ac8ad58beda4d78"></script>
+
+    <title>REST API with angularJS</title>
+</head>
+<body>
+    <h1>REST: HEAD, POST, PUT, PATCH, DELETE, GET, OPTIONS</h1>
+    <div ng-app="restApp">
+        <div ng-controller="restCtrl">
+            <div class="http_box">
+                <button class="btn" ng-click="restHttp({method: 'HEAD'})">HEAD</button>
+            </div>
+
+            <div class="http_box">
+                <input class="form-control" ng-model="post" name="post" />
+                <button class="btn" ng-click="restHttp({method: 'POST', val: post})">POST</button>
+            </div>
+
+            <div class="http_box">
+                <input class="form-control" ng-model="put" />
+                <button class="btn" ng-click="restHttp({method: 'PUT', val: put})">PUT</button>
+            </div>
+
+            <div class="http_box">
+                <input class="form-control" ng-model="patch" />
+                <button class="btn" ng-click="restHttp({method: 'PATCH', val: patch})">PATCH</button>
+            </div>
+
+            <div class="http_box">
+                <button class="btn" ng-click="restHttp({method: 'DELETE'})">DELETE</button>
+            </div>
+
+            <div class="http_box">
+                <button class="btn" ng-click="restHttp({method: 'GET', val: 234567})">GET</button>
+            </div>
+
+            <div class="http_box">
+                <button class="btn" ng-click="restHttp({method: 'OPTIONS'})">OPTIONS</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

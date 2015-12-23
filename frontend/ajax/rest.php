@@ -108,8 +108,7 @@ if($_SERVER["REQUEST_METHOD"] == "HEAD") {
 
     if($some_flag_success) {
         header("HTTP/1.1 204 No Content");
-        $ajax_response_detail = "SOME_PAGE_TYPE - Deleted.";
-        $ajax_response        = "success";
+        // 204 does not answer
 
     }else{
         header("HTTP/1.1 400 Bad Request");
